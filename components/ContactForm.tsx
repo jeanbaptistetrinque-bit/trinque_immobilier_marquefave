@@ -62,10 +62,22 @@ export default function ContactForm({ defaultBien = "" }: ContactFormProps) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // TODO: connecter à Formspree ou Resend
-    setSubmitted(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Une erreur est survenue. Merci de réessayer ou de nous contacter par email.");
+      }
+    } catch {
+      alert("Une erreur est survenue. Merci de réessayer ou de nous contacter par email.");
+    }
   }
 
   if (submitted) {
