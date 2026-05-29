@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* ─── DESIGN SYSTEM — MAISONS DE MARQUEFAVE ─── */
+
+@theme {
+  /* Palette officielle */
+  --color-ivoire:     #F2ECE0;
+  --color-pierre:     #C9B79A;
+  --color-anthracite: #1F1E1B;
+  --color-terracotta: #B85C3E;
+
+  /* Aliases sémantiques */
+  --color-background: #F2ECE0;
+  --color-foreground: #1F1E1B;
+
+  /* Typographies */
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans:  "Manrope", system-ui, sans-serif;
+}
+
+/* ─── BASE ─── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F2ECE0;
+  color: #1F1E1B;
+  font-family: "Manrope", system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+}
+
+/* ─── TYPOGRAPHIE GLOBALE ─── */
+
+h1, h2, h3, h4 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #1F1E1B;
+}
+
+p {
+  font-family: "Manrope", system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+/* ─── SÉPARATEUR ÉDITORIAL ─── */
+
+.editorial-divider {
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  background-color: #C9B79A;
+}
