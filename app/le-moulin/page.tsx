@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const features = [
   { label: "Surface habitable", value: "288 m²" },
   { label: "Terrain total",     value: "13 000 m²" },
-  { label: "Terrain annexe",    value: "400 m² (chevaux)" },
+  { label: "Terrain annexe",    value: "4 000 m²" },
   { label: "Style",             value: "Maison de maître" },
   { label: "Construction",      value: "Galets de Garonne" },
   { label: "Prix",              value: "549 000 €" },
@@ -74,7 +74,7 @@ export default function LeMoulinPage() {
               Au bord de l&apos;Averanède, dans le silence des collines de Marquefave, le Moulin s&apos;impose avec la discrétion des grandes maisons — celles qui n&apos;ont pas besoin de se montrer pour convaincre. Ses murs en galets de Garonne portent un siècle d&apos;histoire familiale.
             </p>
             <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "1rem", fontWeight: 300, lineHeight: 1.9, color: "#1F1E1B", opacity: 0.72 }}>
-              288 mètres carrés de volumes généreux, des hauteurs sous plafond qui laissent respirer, des moulures d&apos;époque intactes, une cave voûtée fraîche et des cheminées qui ont réchauffé des générations. Tout cela sur 13 000 m² de terrain — parc arboré et terres attenantes, dont 400 m² à vocation équestre, avec une possibilité de construction sous réserve d&apos;évolution du PLU.
+              288 mètres carrés de volumes généreux, des hauteurs sous plafond qui laissent respirer, des moulures d&apos;époque intactes, une cave voûtée fraîche et des cheminées qui ont réchauffé des générations. Tout cela sur 13 000 m² de terrain — parc arboré et 4 000 m² de terres attenantes, susceptibles d&apos;accueillir un projet équestre ou, sous réserve d&apos;une modification ultérieure du PLU, une construction.
             </p>
           </div>
 
