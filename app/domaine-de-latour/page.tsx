@@ -1,6 +1,6 @@
 /**
  * Page — Domaine de Latour
- * Corps de ferme — 294 m² — 5 hectares — bâtiment annexe 121 m² — 699 000 €
+ * Corps de ferme — 294 m² — 5 hectares extensibles à 25 — bâtiment annexe 121 m² — 669 000 €
  */
 
 import type { Metadata } from "next";
@@ -12,16 +12,18 @@ import PropertyHero from "@/components/PropertyHero";
 
 export const metadata: Metadata = {
   title: "Domaine de Latour — Maisons de Marquefave",
-  description: "294 m², 5 hectares, bâtiment annexe 121 m², colombier. Marquefave, Haute-Garonne. 699 000 €.",
+  description: "294 m², 5 hectares extensibles à 25, bâtiment annexe 121 m², 2 000 m² bâtiments élevage. Marquefave, Haute-Garonne. 669 000 €.",
 };
 
 const features = [
-  { label: "Surface habitable",   value: "294 m²"             },
-  { label: "Terrain",             value: "5 hectares"          },
-  { label: "Bâtiment annexe",     value: "121 m²"              },
-  { label: "Terrain additionnel", value: "Jusqu'à +20 ha"      },
-  { label: "Dépendances",         value: "Colombier + hangars"  },
-  { label: "Prix",                value: "699 000 €"           },
+  { label: "Surface habitable",    value: "294 m²"                    },
+  { label: "Terrain",              value: "5 hectares"                 },
+  { label: "Bâtiment annexe",      value: "121 m²"                     },
+  { label: "Bâtiments élevage",    value: "2 000 m² couverts"          },
+  { label: "Terrain en sus",       value: "20 ha (prix à débattre)"    },
+  { label: "Total potentiel",      value: "25 hectares"                },
+  { label: "Dépendances",          value: "Colombier + hangars"         },
+  { label: "Prix",                 value: "669 000 €"                  },
 ];
 
 export default function DomaineDeLatourPage() {
@@ -36,7 +38,7 @@ export default function DomaineDeLatourPage() {
           tagline="Corps de ferme, annexe, dépendances — cinq hectares extensibles à vingt-cinq. Un domaine à façonner."
           imageSrc="/images/domaine-de-latour/facade1.jpg"
           imageAlt="Domaine de Latour — vue d'ensemble"
-          prix="699 000 €"
+          prix="669 000 €"
           surface="294 m²"
           terrain="5 ha"
           galerieHref="#galerie"

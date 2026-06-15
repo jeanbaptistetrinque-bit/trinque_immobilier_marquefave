@@ -1,6 +1,6 @@
 /**
  * Page — Le Moulin de l'Averanède
- * Maison de maître en galets de Garonne — 288 m² — 9 000 m² — 549 000 €
+ * Maison de maître en galets de Garonne — 288 m² — 13 000 m² — 539 000 €
  */
 
 import type { Metadata } from "next";
@@ -13,16 +13,16 @@ import PropertyHero from "@/components/PropertyHero";
 export const metadata: Metadata = {
   title: "Le Moulin de l'Averanède — Maisons de Marquefave",
   description:
-    "Maison de maître en galets de Garonne, 288 m², 9 000 m² de parc. Marquefave, Haute-Garonne. 549 000 €.",
+    "Maison de maître en galets de Garonne, 288 m², 13 000 m² de terrain. Marquefave, Haute-Garonne. 539 000 €.",
 };
 
 const features = [
   { label: "Surface habitable", value: "288 m²" },
-  { label: "Terrain",           value: "9 000 m²" },
+  { label: "Terrain total",     value: "13 000 m²" },
+  { label: "Terrain annexe",    value: "400 m² (chevaux)" },
   { label: "Style",             value: "Maison de maître" },
-  { label: "Époque",            value: "Début XXe siècle" },
   { label: "Construction",      value: "Galets de Garonne" },
-  { label: "Prix",              value: "549 000 €" },
+  { label: "Prix",              value: "539 000 €" },
 ];
 
 const highlights = [
@@ -46,9 +46,9 @@ export default function LeMoulinPage() {
           tagline="Une maison de maître en galets de Garonne, posée dans un parc de neuf mille mètres carrés."
           imageSrc="/images/le-moulin/facade-02.jpg"
           imageAlt="Le Moulin de l'Averanède — façade principale"
-          prix="549 000 €"
+          prix="539 000 €"
           surface="288 m²"
-          terrain="9 000 m²"
+          terrain="13 000 m²"
           galerieHref="#galerie"
         />
       </div>
@@ -74,7 +74,7 @@ export default function LeMoulinPage() {
               Au bord de l&apos;Averanède, dans le silence des collines de Marquefave, le Moulin s&apos;impose avec la discrétion des grandes maisons — celles qui n&apos;ont pas besoin de se montrer pour convaincre. Ses murs en galets de Garonne portent un siècle d&apos;histoire familiale.
             </p>
             <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "1rem", fontWeight: 300, lineHeight: 1.9, color: "#1F1E1B", opacity: 0.72 }}>
-              288 mètres carrés de volumes généreux, des hauteurs sous plafond qui laissent respirer, des moulures d&apos;époque intactes, une cave voûtée fraîche et des cheminées qui ont réchauffé des générations. Tout cela sur 9 000 m² de parc arboré, à trente minutes de Toulouse.
+              288 mètres carrés de volumes généreux, des hauteurs sous plafond qui laissent respirer, des moulures d&apos;époque intactes, une cave voûtée fraîche et des cheminées qui ont réchauffé des générations. Tout cela sur 13 000 m² de terrain — parc arboré et terres attenantes, dont 400 m² dédiés à un usage équestre.
             </p>
           </div>
 

@@ -82,7 +82,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4 pt-2" style={{ borderTop: "1px solid #C9B79A30" }}>
-              {[["Prix", "549 000 €"], ["Surface", "288 m²"], ["Terrain", "9 000 m²"]].map(([label, val]) => (
+              {[["Prix", "539 000 €"], ["Surface", "288 m²"], ["Terrain", "13 000 m²"]].map(([label, val]) => (
                 <div key={label} className="flex flex-col gap-1">
                   <span style={{ fontFamily: "Manrope, sans-serif", fontSize: "0.58rem", fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "#1F1E1B", opacity: 0.35 }}>
                     {label}
@@ -125,7 +125,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4 pt-2" style={{ borderTop: "1px solid #C9B79A30" }}>
-              {[["Prix", "699 000 €"], ["Bâti", "294 m²"], ["Terrain", "5 ha"]].map(([label, val]) => (
+              {[["Prix", "669 000 €"], ["Bâti", "294 m²"], ["Terrain", "5 ha"]].map(([label, val]) => (
                 <div key={label} className="flex flex-col gap-1">
                   <span style={{ fontFamily: "Manrope, sans-serif", fontSize: "0.58rem", fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "#1F1E1B", opacity: 0.35 }}>
                     {label}
@@ -159,13 +159,10 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-6 md:col-start-7 flex flex-col gap-7" style={{ paddingTop: "0.5rem" }}>
             <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "1rem", fontWeight: 300, lineHeight: 1.9, color: "#1F1E1B", opacity: 0.68 }}>
-              Ces deux propriétés ont été habitées et aimées par la même famille pendant plusieurs décennies. Leur mise en vente est une décision familiale, traitée avec soin. Il n&apos;y a pas d&apos;agence, pas de commission, pas d&apos;intermédiaire.
+              Ces deux propriétés ont été habitées et aimées par la même famille pendant plusieurs décennies. Leur mise en vente est une décision familiale, traitée avec soin.
             </p>
             <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "1rem", fontWeight: 300, lineHeight: 1.9, color: "#1F1E1B", opacity: 0.68 }}>
-              Les visites se font sur rendez-vous, dans la discrétion. Les acquéreurs sérieux sont reçus directement par la famille, qui connaît chaque pierre, chaque arbre, chaque histoire de ces maisons.
-            </p>
-            <p style={{ fontFamily: "Cormorant Garamond, Georgia, serif", fontSize: "clamp(1rem, 1.8vw, 1.2rem)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.7, color: "#B85C3E" }}>
-              Ce que vous économisez en commission, vous l&apos;investissez dans la maison.
+              Les visites se font sur rendez-vous, dans la discrétion. Les acquéreurs sont reçus directement par la famille, qui connaît chaque pierre, chaque arbre, chaque histoire de ces maisons.
             </p>
           </div>
         </div>
