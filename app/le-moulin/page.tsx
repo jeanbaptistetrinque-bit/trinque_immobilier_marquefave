@@ -11,9 +11,9 @@ import CTAButton from "@/components/CTAButton";
 import PropertyHero from "@/components/PropertyHero";
 
 export const metadata: Metadata = {
-  title: "Le Moulin de l'Averanède — Maisons de Marquefave",
+  title: "Le Moulin de l'Averanède — Maisons de Carbonne",
   description:
-    "Maison de maître en galets de Garonne, 288 m², 13 000 m² de terrain. Marquefave, Haute-Garonne. 549 000 €.",
+    "Maison de maître en galets de Garonne, 288 m², 13 000 m² de terrain. Carbonne, Haute-Garonne. 549 000 €.",
 };
 
 const features = [
@@ -71,7 +71,7 @@ export default function LeMoulinPage() {
           {/* Texte — deux colonnes sur desktop */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6" style={{ borderTop: "1px solid #C9B79A30", paddingTop: "clamp(3rem, 6vw, 5rem)" }}>
             <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "1rem", fontWeight: 300, lineHeight: 1.9, color: "#1F1E1B", opacity: 0.72 }}>
-              Au bord de l&apos;Averanède, dans le silence des collines de Marquefave, le Moulin s&apos;impose avec la discrétion des grandes maisons — celles qui n&apos;ont pas besoin de se montrer pour convaincre. Ses murs en galets de Garonne portent un siècle d&apos;histoire familiale.
+              Au bord de l&apos;Averanède, dans le silence des collines de Carbonne, le Moulin s&apos;impose avec la discrétion des grandes maisons — celles qui n&apos;ont pas besoin de se montrer pour convaincre. Ses murs en galets de Garonne portent un siècle d&apos;histoire familiale.
             </p>
             <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "1rem", fontWeight: 300, lineHeight: 1.9, color: "#1F1E1B", opacity: 0.72 }}>
               288 mètres carrés de volumes généreux, des hauteurs sous plafond qui laissent respirer, des moulures d&apos;époque intactes, une cave voûtée fraîche et des cheminées qui ont réchauffé des générations. Tout cela sur 13 000 m² de terrain — parc arboré et 4 000 m² de terres attenantes, susceptibles d&apos;accueillir un projet équestre ou, sous réserve d&apos;une modification ultérieure du PLU, une construction.

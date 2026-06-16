@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       "Les deux propriétés";
 
     await resend.emails.send({
-      from: "Maisons de Marquefave <onboarding@resend.dev>",
+      from: "Maisons de Carbonne <onboarding@resend.dev>",
       to: ["jeanbaptistetrinque@hotmail.fr"],
       subject: `Nouvelle demande de visite — ${bienLabel}`,
       html: `

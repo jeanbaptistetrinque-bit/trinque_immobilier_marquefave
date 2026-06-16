@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Maisons de Marquefave — Deux demeures, une même lumière.",
+  title: "Maisons de Carbonne — Deux demeures, une même lumière.",
   description:
     "Le Moulin de l'Averanède et le Domaine de Latour. Deux propriétés familiales d'exception dans le sud de la France, à céder dans un cadre rare et préservé.",
   openGraph: {
-    title: "Maisons de Marquefave",
+    title: "Maisons de Carbonne",
     description: "Deux demeures, une même lumière.",
     type: "website",
     locale: "fr_FR",

@@ -23,7 +23,7 @@ export default function Footer() {
             opacity: 0.5,
           }}
         >
-          Maisons de Marquefave — Vente familiale directe
+          Maisons de Carbonne — Vente familiale directe
         </p>
 
         {/* Liens */}

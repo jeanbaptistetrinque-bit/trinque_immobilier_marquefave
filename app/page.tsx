@@ -1,5 +1,5 @@
 /**
- * Homepage — Maisons de Marquefave
+ * Homepage — Maisons de Carbonne
  * Hero éditorial + diptyque + vente directe + territoire/map + formulaire
  */
 
@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto flex flex-col gap-10">
 
           <span style={{ fontFamily: "Manrope, sans-serif", fontSize: "0.6rem", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "#C9B79A" }}>
-            Marquefave — Haute-Garonne · 31
+            Carbonne — Haute-Garonne · 31
           </span>
 
           <h1 style={{
@@ -59,7 +59,7 @@ export default function HomePage() {
                 Réf. LM — 001
               </span>
               <span style={{ fontFamily: "Manrope, sans-serif", fontSize: "0.6rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "#1F1E1B", opacity: 0.35 }}>
-                Marquefave · 31
+                Carbonne · 31
               </span>
             </div>
             <div className="relative overflow-hidden" style={{ aspectRatio: "3/2", backgroundColor: "#C9B79A15" }}>
@@ -102,7 +102,7 @@ export default function HomePage() {
                 Réf. DL — 002
               </span>
               <span style={{ fontFamily: "Manrope, sans-serif", fontSize: "0.6rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "#1F1E1B", opacity: 0.35 }}>
-                Marquefave · 31
+                Carbonne · 31
               </span>
             </div>
             <div className="relative overflow-hidden" style={{ aspectRatio: "3/2", backgroundColor: "#C9B79A15" }}>
@@ -177,7 +177,7 @@ export default function HomePage() {
               Le territoire
             </span>
             <h2 style={{ fontFamily: "Cormorant Garamond, Georgia, serif", fontSize: "clamp(2.75rem, 7vw, 6rem)", fontWeight: 300, lineHeight: 1.0, color: "#1F1E1B" }}>
-              Marquefave —{" "}
+              Carbonne —{" "}
               <em style={{ fontStyle: "italic", color: "#B85C3E" }}>rive gauche.</em>
             </h2>
           </div>
@@ -188,7 +188,7 @@ export default function HomePage() {
             <div style={{ border: "1px solid #C9B79A25", overflow: "hidden" }}>
               <img
                 src="/images/map-marquefave.svg"
-                alt="Carte du territoire — Marquefave, Garonne et Ariège"
+                alt="Carte du territoire — Carbonne, Garonne et Ariège"
                 style={{ width: "100%", display: "block" }}
               />
             </div>

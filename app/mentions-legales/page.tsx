@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
-  title: "Mentions légales — Maisons de Marquefave",
-  description: "Mentions légales du site Maisons de Marquefave.",
+  title: "Mentions légales — Maisons de Carbonne",
+  description: "Mentions légales du site Maisons de Carbonne.",
 };
 
 const sectionTitle: React.CSSProperties = {
@@ -54,7 +54,7 @@ export default function MentionsLegalesPage() {
             Jean-François Trinqué
           </p>
           <p style={{ ...body, marginTop: "0.75rem" }}>
-            <strong style={{ fontWeight: 500 }}>Adresse :</strong> Marquefave, 31390, Haute-Garonne, France<br />
+            <strong style={{ fontWeight: 500 }}>Adresse :</strong> Carbonne, 31390, Haute-Garonne, France<br />
             <strong style={{ fontWeight: 500 }}>Email :</strong> jeanbaptistetrinque@hotmail.fr
           </p>
 

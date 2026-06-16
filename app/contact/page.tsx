@@ -8,7 +8,7 @@ import EditorialTitle from "@/components/EditorialTitle";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Maisons de Marquefave",
+  title: "Contact — Maisons de Carbonne",
   description: "Demandez une visite confidentielle. Vente directe, sans intermédiaire.",
 };
 

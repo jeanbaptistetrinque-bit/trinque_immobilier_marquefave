@@ -11,8 +11,8 @@ import CTAButton from "@/components/CTAButton";
 import PropertyHero from "@/components/PropertyHero";
 
 export const metadata: Metadata = {
-  title: "Domaine de Latour — Maisons de Marquefave",
-  description: "294 m², 5 hectares extensibles à 25, bâtiment annexe 121 m², 2 000 m² bâtiments élevage. Marquefave, Haute-Garonne. 669 000 €.",
+  title: "Domaine de Latour — Maisons de Carbonne",
+  description: "294 m², 5 hectares extensibles à 25, bâtiment annexe 121 m², 2 000 m² bâtiments élevage. Carbonne, Haute-Garonne. 669 000 €.",
 };
 
 const features = [
@@ -216,7 +216,7 @@ export default function DomaineDeLatourPage() {
               <em style={{ fontStyle: "italic", color: "#B85C3E" }}>un siècle plus loin.</em>
             </h2>
             <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "0.95rem", fontWeight: 300, lineHeight: 1.85, color: "#1F1E1B", opacity: 0.6 }}>
-              Marquefave conserve son école, sa boulangerie, son marché du samedi. Tout ce qui fait qu&apos;un domaine de campagne reste habitable au quotidien — sans renoncer à la ville quand elle s&apos;invite.
+              Carbonne conserve son école, sa boulangerie, son marché du samedi. Tout ce qui fait qu&apos;un domaine de campagne reste habitable au quotidien — sans renoncer à la ville quand elle s&apos;invite.
             </p>
           </div>
 

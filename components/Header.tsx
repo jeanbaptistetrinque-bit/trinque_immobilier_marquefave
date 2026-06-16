@@ -1,5 +1,5 @@
 /**
- * Header — Navigation minimaliste Maisons de Marquefave
+ * Header — Navigation minimaliste Maisons de Carbonne
  * Fond ivoire transparent, logotype centré, liens discrets
  */
 
@@ -36,7 +36,7 @@ export default function Header() {
               textTransform: "uppercase",
             }}
           >
-            Marquefave
+            Carbonne
           </span>
         </Link>
 
