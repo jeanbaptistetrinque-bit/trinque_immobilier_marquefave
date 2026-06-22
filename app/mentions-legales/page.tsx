@@ -45,7 +45,7 @@ export default function MentionsLegalesPage() {
           {/* Éditeur */}
           <h2 style={sectionTitle}>Éditeur du site</h2>
           <p style={body}>
-            Le site <strong style={{ fontWeight: 500 }}>maisonsde-marquefave.vercel.app</strong> est édité par des particuliers dans le cadre d'une vente immobilière directe entre particuliers.
+            Le site <strong style={{ fontWeight: 500 }}>maisons-carbonne.fr</strong> est édité par des particuliers dans le cadre d'une vente immobilière directe entre particuliers.
           </p>
           <p style={{ ...body, marginTop: "0.75rem" }}>
             <strong style={{ fontWeight: 500 }}>Vendeurs :</strong><br />
