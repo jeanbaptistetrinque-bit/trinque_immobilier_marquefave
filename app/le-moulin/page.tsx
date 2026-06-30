@@ -39,7 +39,7 @@ export default function LeMoulinPage() {
     <PageShell>
 
       {/* ─── 1. HERO ─── */}
-      <div id="galerie">
+      <div>
         <PropertyHero
           titleLine1="Le Moulin"
           titleLine2="de l'Averanède"
@@ -87,7 +87,7 @@ export default function LeMoulinPage() {
       </section>
 
       {/* ─── 3. GALERIE IMMERSIVE ─── */}
-      <section style={{ paddingBottom: "clamp(6rem, 12vw, 10rem)", paddingLeft: "2rem", paddingRight: "2rem" }}>
+      <section id="galerie" style={{ paddingBottom: "clamp(6rem, 12vw, 10rem)", paddingLeft: "2rem", paddingRight: "2rem" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-12 flex flex-col gap-5">
 
           {/* Ligne 1 — grande + portrait, même hauteur */}
