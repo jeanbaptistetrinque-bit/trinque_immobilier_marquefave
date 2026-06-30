@@ -69,6 +69,22 @@ export default function CTAButton({
   };
 
   if (href) {
+    // Ancres in-page → <a> classique (Next.js Link gère mal les hash-only hrefs)
+    if (href.startsWith("#")) {
+      return (
+        <a
+          href={href}
+          style={combinedStyle}
+          className={
+            variant === "filled"
+              ? "hover:opacity-90"
+              : "hover:bg-[#1F1E1B] hover:text-[#F2ECE0]"
+          }
+        >
+          {label}
+        </a>
+      );
+    }
     return (
       <Link
         href={href}
