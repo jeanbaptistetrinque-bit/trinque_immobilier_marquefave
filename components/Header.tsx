@@ -66,6 +66,21 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+          <a
+            href="tel:+33608907571"
+            style={{
+              fontFamily: "Manrope, system-ui, sans-serif",
+              fontSize: "0.75rem",
+              fontWeight: 500,
+              letterSpacing: "0.12em",
+              color: "#B85C3E",
+              textDecoration: "none",
+              transition: "opacity 0.2s ease",
+            }}
+            className="hover:opacity-70"
+          >
+            06 08 90 75 71
+          </a>
         </nav>
 
         {/* Mobile — menu burger minimal (placeholder) */}

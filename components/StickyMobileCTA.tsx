@@ -22,25 +22,46 @@ export default function StickyMobileCTA({
       style={{
         backgroundColor: "#F2ECE0",
         borderTop: "1px solid #C9B79A40",
-        padding: "1rem 1.5rem",
-        paddingBottom: "calc(1rem + env(safe-area-inset-bottom))",
+        padding: "0.85rem 1.25rem",
+        paddingBottom: "calc(0.85rem + env(safe-area-inset-bottom))",
+        display: "flex",
+        gap: "0.75rem",
       }}
     >
+      {/* Appeler */}
+      <a
+        href="tel:+33608907571"
+        style={{
+          flex: 1,
+          textAlign: "center",
+          border: "1px solid #1F1E1B",
+          color: "#1F1E1B",
+          fontFamily: "Manrope, sans-serif",
+          fontSize: "0.65rem",
+          fontWeight: 500,
+          letterSpacing: "0.15em",
+          textTransform: "uppercase",
+          textDecoration: "none",
+          padding: "0.9rem 0.5rem",
+        }}
+      >
+        Appeler
+      </a>
+      {/* Formulaire */}
       <Link
         href={href}
         style={{
-          display: "block",
-          width: "100%",
+          flex: 2,
           textAlign: "center",
           backgroundColor: "#B85C3E",
           color: "#F2ECE0",
           fontFamily: "Manrope, sans-serif",
-          fontSize: "0.7rem",
+          fontSize: "0.65rem",
           fontWeight: 500,
-          letterSpacing: "0.18em",
+          letterSpacing: "0.15em",
           textTransform: "uppercase",
           textDecoration: "none",
-          padding: "1rem",
+          padding: "0.9rem 0.5rem",
         }}
       >
         {label}
