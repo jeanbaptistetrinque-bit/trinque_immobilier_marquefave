@@ -9,6 +9,7 @@ import PageShell from "@/components/PageShell";
 import EditorialTitle from "@/components/EditorialTitle";
 import CTAButton from "@/components/CTAButton";
 import PropertyHero from "@/components/PropertyHero";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 export const metadata: Metadata = {
   title: "Le Moulin de l'Averanède — Maisons de Carbonne",
@@ -280,6 +281,7 @@ export default function LeMoulinPage() {
         </div>
       </section>
 
+      <StickyMobileCTA />
     </PageShell>
   );
 }

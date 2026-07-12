@@ -9,6 +9,7 @@ import PageShell from "@/components/PageShell";
 import EditorialTitle from "@/components/EditorialTitle";
 import CTAButton from "@/components/CTAButton";
 import PropertyHero from "@/components/PropertyHero";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 export const metadata: Metadata = {
   title: "Domaine de Latour — Maisons de Carbonne",
@@ -266,6 +267,7 @@ export default function DomaineDeLatourPage() {
         </div>
       </section>
 
+      <StickyMobileCTA />
     </PageShell>
   );
 }
