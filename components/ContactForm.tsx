@@ -51,8 +51,6 @@ export default function ContactForm({ defaultBien = "" }: ContactFormProps) {
     email: "",
     telephone: "",
     bien: defaultBien,
-    projet: "",
-    decouverte: "",
     message: "",
   });
 
@@ -121,39 +119,14 @@ export default function ContactForm({ defaultBien = "" }: ContactFormProps) {
         </div>
       </div>
 
-      {/* Bien concerné + Projet */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex flex-col gap-1">
-          <label style={labelStyle}>Bien concerné</label>
-          <select name="bien" required value={form.bien} onChange={handleChange} style={selectStyle}>
-            <option value="">Sélectionnez</option>
-            <option value="le-moulin">Le Moulin de l&apos;Averanède</option>
-            <option value="domaine-de-latour">Domaine de Latour</option>
-            <option value="les-deux">Les deux propriétés</option>
-          </select>
-        </div>
-        <div className="flex flex-col gap-1">
-          <label style={labelStyle}>Votre projet</label>
-          <select name="projet" required value={form.projet} onChange={handleChange} style={selectStyle}>
-            <option value="">Sélectionnez</option>
-            <option value="residence-principale">Résidence principale</option>
-            <option value="residence-secondaire">Résidence secondaire</option>
-            <option value="investissement">Projet patrimonial</option>
-            <option value="autre">Autre</option>
-          </select>
-        </div>
-      </div>
-
-      {/* Comment avez-vous découvert */}
+      {/* Bien concerné */}
       <div className="flex flex-col gap-1">
-        <label style={labelStyle}>Comment avez-vous découvert ces propriétés ?</label>
-        <select name="decouverte" required value={form.decouverte} onChange={handleChange} style={selectStyle}>
+        <label style={labelStyle}>Bien concerné</label>
+        <select name="bien" required value={form.bien} onChange={handleChange} style={selectStyle}>
           <option value="">Sélectionnez</option>
-          <option value="bouche-a-oreille">Bouche-à-oreille</option>
-          <option value="reseaux-sociaux">Réseaux sociaux</option>
-          <option value="recherche-web">Recherche internet</option>
-          <option value="presse">Presse / magazine</option>
-          <option value="autre">Autre</option>
+          <option value="le-moulin">Le Moulin de l&apos;Averanède</option>
+          <option value="domaine-de-latour">Domaine de Latour</option>
+          <option value="les-deux">Les deux propriétés</option>
         </select>
       </div>
 
