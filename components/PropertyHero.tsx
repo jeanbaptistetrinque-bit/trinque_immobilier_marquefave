@@ -92,6 +92,18 @@ export default function PropertyHero({
           </div>
         </div>
 
+        {/* ─── Réassurance ─── */}
+        <p style={{
+          fontFamily: "Manrope, sans-serif",
+          fontSize: "0.68rem",
+          fontWeight: 400,
+          letterSpacing: "0.12em",
+          color: "#1F1E1B",
+          opacity: 0.45,
+        }}>
+          Vente directe entre particuliers · Visites organisées par la famille · Notaire impliqué
+        </p>
+
         {/* ─── CTAs ─── */}
         <div className="flex flex-col sm:flex-row gap-4">
           <CTAButton label="Demander une visite →" href="/contact" variant="filled" />
