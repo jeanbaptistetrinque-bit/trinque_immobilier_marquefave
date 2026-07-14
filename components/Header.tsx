@@ -67,7 +67,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="tel:+33608907571"
+            href="tel:+33757849040"
             style={{
               fontFamily: "Manrope, system-ui, sans-serif",
               fontSize: "0.75rem",
@@ -79,7 +79,7 @@ export default function Header() {
             }}
             className="hover:opacity-70"
           >
-            06 08 90 75 71
+            07 57 84 90 40
           </a>
         </nav>
 
