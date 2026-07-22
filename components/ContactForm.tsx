@@ -6,6 +6,7 @@
  */
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 interface ContactFormProps {
   /** Pré-sélectionne un bien si on arrive depuis une page bien */
@@ -69,6 +70,7 @@ export default function ContactForm({ defaultBien = "" }: ContactFormProps) {
         body: JSON.stringify(form),
       });
       if (res.ok) {
+        track("formulaire_envoye", { bien: form.bien });
         setSubmitted(true);
       } else {
         alert("Une erreur est survenue. Merci de réessayer ou de nous contacter par email.");

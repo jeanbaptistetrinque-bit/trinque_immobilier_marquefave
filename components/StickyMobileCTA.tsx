@@ -6,6 +6,7 @@
 "use client";
 
 import Link from "next/link";
+import { track } from "@vercel/analytics";
 
 interface StickyMobileCTAProps {
   href?: string;
@@ -31,6 +32,7 @@ export default function StickyMobileCTA({
       {/* Appeler */}
       <a
         href="tel:+33757849040"
+        onClick={() => track("clic_appeler_mobile")}
         style={{
           flex: 1,
           textAlign: "center",
@@ -50,6 +52,7 @@ export default function StickyMobileCTA({
       {/* Formulaire */}
       <Link
         href={href}
+        onClick={() => track("clic_demander_visite_mobile")}
         style={{
           flex: 2,
           textAlign: "center",

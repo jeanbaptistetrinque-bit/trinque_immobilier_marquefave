@@ -3,7 +3,10 @@
  * Deux variantes : "outline" (défaut) et "filled" (terracotta)
  */
 
+"use client";
+
 import Link from "next/link";
+import { track } from "@vercel/analytics";
 
 interface CTAButtonProps {
   label: string;
@@ -12,6 +15,8 @@ interface CTAButtonProps {
   variant?: "outline" | "filled";
   /** Taille */
   size?: "sm" | "md";
+  /** Nom de l'événement Analytics */
+  trackEvent?: string;
 }
 
 const styles = {
@@ -32,17 +37,10 @@ const styles = {
     border: "1px solid #1F1E1B",
     padding: "0.85rem 2.5rem",
   },
-  outlineHover: {
-    backgroundColor: "#1F1E1B",
-    color: "#F2ECE0",
-  },
   filled: {
     color: "#F2ECE0",
     backgroundColor: "#B85C3E",
     padding: "0.85rem 2.5rem",
-  },
-  filledHover: {
-    backgroundColor: "#9e4f35",
   },
 };
 
@@ -57,6 +55,7 @@ export default function CTAButton({
   onClick,
   variant = "outline",
   size = "md",
+  trackEvent,
 }: CTAButtonProps) {
   const sizing = sizeMap[size];
   const variantStyle = variant === "filled" ? styles.filled : styles.outline;
@@ -68,18 +67,19 @@ export default function CTAButton({
     padding: sizing.padding,
   };
 
+  const handleClick = () => {
+    if (trackEvent) track(trackEvent);
+    if (onClick) onClick();
+  };
+
   if (href) {
-    // Ancres in-page → <a> classique (Next.js Link gère mal les hash-only hrefs)
     if (href.startsWith("#")) {
       return (
         <a
           href={href}
           style={combinedStyle}
-          className={
-            variant === "filled"
-              ? "hover:opacity-90"
-              : "hover:bg-[#1F1E1B] hover:text-[#F2ECE0]"
-          }
+          onClick={handleClick}
+          className={variant === "filled" ? "hover:opacity-90" : "hover:bg-[#1F1E1B] hover:text-[#F2ECE0]"}
         >
           {label}
         </a>
@@ -89,11 +89,8 @@ export default function CTAButton({
       <Link
         href={href}
         style={combinedStyle}
-        className={
-          variant === "filled"
-            ? "hover:opacity-90"
-            : "hover:bg-[#1F1E1B] hover:text-[#F2ECE0]"
-        }
+        onClick={handleClick}
+        className={variant === "filled" ? "hover:opacity-90" : "hover:bg-[#1F1E1B] hover:text-[#F2ECE0]"}
       >
         {label}
       </Link>
@@ -102,13 +99,9 @@ export default function CTAButton({
 
   return (
     <button
-      onClick={onClick}
+      onClick={handleClick}
       style={combinedStyle}
-      className={
-        variant === "filled"
-          ? "hover:opacity-90"
-          : "hover:bg-[#1F1E1B] hover:text-[#F2ECE0]"
-      }
+      className={variant === "filled" ? "hover:opacity-90" : "hover:bg-[#1F1E1B] hover:text-[#F2ECE0]"}
     >
       {label}
     </button>

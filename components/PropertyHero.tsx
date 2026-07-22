@@ -106,8 +106,8 @@ export default function PropertyHero({
 
         {/* ─── CTAs ─── */}
         <div className="flex flex-col sm:flex-row gap-4">
-          <CTAButton label="Demander une visite →" href="/contact" variant="filled" />
-          <CTAButton label="Voir la galerie →" href={galerieHref} variant="outline" />
+          <CTAButton label="Demander une visite →" href="/contact" variant="filled" trackEvent="clic_demander_visite" />
+          <CTAButton label="Voir la galerie →" href={galerieHref} variant="outline" trackEvent="clic_voir_galerie" />
         </div>
 
       </div>
