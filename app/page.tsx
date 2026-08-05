@@ -82,7 +82,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4 pt-2" style={{ borderTop: "1px solid #C9B79A30" }}>
-              {[["Prix", "549 000 €"], ["Surface", "288 m²"], ["Terrain", "13 000 m²"]].map(([label, val]) => (
+              {[["Prix", "510 000 €"], ["Surface", "288 m²"], ["Terrain", "13 000 m²"]].map(([label, val]) => (
                 <div key={label} className="flex flex-col gap-1">
                   <span style={{ fontFamily: "Manrope, sans-serif", fontSize: "0.58rem", fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "#1F1E1B", opacity: 0.35 }}>
                     {label}

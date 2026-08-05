@@ -1,6 +1,6 @@
 /**
  * Page — Le Moulin de l'Averanède
- * Maison de maître en galets de Garonne — 288 m² — 13 000 m² — 549 000 €
+ * Maison de maître en galets de Garonne — 288 m² — 13 000 m² — 510 000 €
  */
 
 import type { Metadata } from "next";
@@ -14,7 +14,7 @@ import StickyMobileCTA from "@/components/StickyMobileCTA";
 export const metadata: Metadata = {
   title: "Le Moulin de l'Averanède — Maisons de Carbonne",
   description:
-    "Maison de maître en galets de Garonne, 288 m², 13 000 m² de terrain. Carbonne, Haute-Garonne. 549 000 €.",
+    "Maison de maître en galets de Garonne, 288 m², 13 000 m² de terrain. Carbonne, Haute-Garonne. 510 000 €.",
 };
 
 const features = [
@@ -23,7 +23,7 @@ const features = [
   { label: "Terrain annexe",    value: "4 000 m²" },
   { label: "Style",             value: "Maison de maître" },
   { label: "Construction",      value: "Galets de Garonne" },
-  { label: "Prix",              value: "549 000 €" },
+  { label: "Prix",              value: "510 000 €" },
 ];
 
 const highlights = [
@@ -47,7 +47,7 @@ export default function LeMoulinPage() {
           tagline="Une maison de maître en galets de Garonne, posée dans un parc de neuf mille mètres carrés."
           imageSrc="/images/le-moulin/facade-02.jpg"
           imageAlt="Le Moulin de l'Averanède — façade principale"
-          prix="549 000 €"
+          prix="510 000 €"
           surface="288 m²"
           terrain="13 000 m²"
           galerieHref="#galerie"
